@@ -35,6 +35,7 @@ const COLORS = ["red", "blue", "green", "yellow", "purple", "orange"];
             if (gameOver) return;
             if (color === targetColor) {
                 score++;
+                document.getElementById("gameStatus").textContent = 'Correct!'
                 document.getElementById("score").textContent = `Score: ${score}`;
                 generateNewColors();
             } else {
